@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/suggest/index",
+    "pages/random/index"
+  ],
+  "window": {},
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/suggest/index",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/random/index",
+        "text": "奖惩"
+      }
+    ]
+  }
+}
