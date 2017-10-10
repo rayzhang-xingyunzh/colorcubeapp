@@ -6,7 +6,19 @@ class Game{
   }
 
   getSuggestion(options){
-    return games
+    return games.filter((game) => {
+      console.log(options)
+
+      if(game.players.min > options.players){
+        return false
+      }
+
+      if(game.players.max < options.players){
+        return false
+      }
+
+      return true
+    })
   }
 }
 

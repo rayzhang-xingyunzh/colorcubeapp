@@ -1,5 +1,4 @@
 // pages/suggest/index.js
-import Game from '../../services/game.js'
 
 Page({
 
@@ -21,8 +20,6 @@ Page({
    */
   onLoad: function (options) {
     // console.log(Game)
-    const gameService = new Game()
-    console.log(gameService.getSuggestion())
   },
 
   /**

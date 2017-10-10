@@ -1,2 +1,11 @@
 <!--pages/suggestion/index.wxml-->
-<text>pages/suggestion/index.wxml</text>
+
+<view class='page'>
+  <text>推荐结果</text>
+
+  <view class='result'>
+    <view wx:for="{{suggestion}}" wx:key="" data-id="{{item.id}}" catchtap='handleCardClick'>
+      {{item.name}}
+    </view>
+  </view>
+</view>

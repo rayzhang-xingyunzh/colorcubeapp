@@ -1,5 +1,6 @@
 
 const games = [{
+  "id":1,
   "name": "SET",
   "players": {
     "min": 1,
