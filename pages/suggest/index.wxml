@@ -1,2 +1,29 @@
 <!--pages/suggest/index.wxml-->
-<text>pages/suggest/index.wxml</text>
+<view class='page'>
+  <text>游戏推荐</text>
+
+  <view class='panel'>
+    <text>游戏人数</text>
+    <slider min='1' max='20' bindchange='playersChange' value='2' step='1' backgroundColor='grey' activeColor='orange'></slider>
+  </view>
+
+  <view class='panel'>
+    <text>游戏时长</text>
+    <slider min='0' max='100' bindchange='durationChange' value='20' step='5' backgroundColor='grey' activeColor='purple'></slider>
+  </view>
+
+  <view class='panel'>
+    <text>游戏类型</text>
+    <view class="tag_btn_group">
+      <checkbox-group class="checkbox-group" bindchange="tagChange">
+        <label wx:for="{{tags}}" wx:key="" class="{{item.checked?'checkbox-label-checked':'checkbox-label'}} checkbox">
+          <checkbox class='checkbox-tag' value='{{item.name}}'/>{{item.name}}
+        </label>
+      </checkbox-group>
+    </view>
+  </view>
+
+  <view class='panel'>
+    <button catchtap='suggest'>推荐游戏</button>
+  </view>
+</view>

@@ -2,9 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/suggest/index",
-    "pages/random/index"
+    "pages/random/index",
+    "pages/suggestion/index",
+    "pages/game/index"
   ],
-  "window": {},
+  "window": {
+    "navigationBarTitleText":"快乐方桌游"
+  },
   "tabBar": {
     "list": [
       {

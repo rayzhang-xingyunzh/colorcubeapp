@@ -1,1 +1,37 @@
 /* pages/suggest/index.wxss */
+
+.panel{
+  display: block;
+  height: auto;
+  margin-top:10rpx;
+}
+
+.checkbox-group{
+  height: auto;
+  display: flex;
+}
+
+.checkbox{
+  width: 20%;
+  height: 40rpx;
+  margin-left: 5%;
+  margin-right:5%; 
+}  
+
+.checkbox-tag {
+  display: none;
+}
+
+.checkbox-label{
+ background-color: whitesmoke;
+    padding: 9rpx;
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox-label-checked{
+  background-color: blue;
+    padding: 9rpx;
+    display: inline-block;
+    position: relative;
+} 
