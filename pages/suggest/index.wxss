@@ -4,6 +4,8 @@
   display: block;
   height: auto;
   margin-top: 20rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
 }
 
 .min_no {

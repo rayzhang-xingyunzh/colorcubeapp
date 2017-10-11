@@ -1,2 +1,22 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class='page'>
+  <view class='swiper-panel'>
+    <swiper class='swiper' autoplay='true'>
+      <swiper-item>
+        <image mode='aspectFill' src='../../srcs/imgs/banner_index.png'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class='hot_game-panel'>
+    <view class='hot_game-title'>
+      热门游戏
+    </view>
+  </view>
+
+  <view class='actions-panel'>
+    <view class='action-pad'>我想去</view>
+    <view class='action-pad'>我想去</view>
+    <view class='action-pad'>我想去</view>
+  </view>
+</view>
