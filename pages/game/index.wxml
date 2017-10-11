@@ -1,2 +1,7 @@
 <!--pages/game/index.wxml-->
 <text>pages/game/index.wxml</text>
+<view class='page'>
+  <view>
+    <text>{{game.name}}</text>
+  </view>
+</view>

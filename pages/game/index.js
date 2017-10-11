@@ -1,18 +1,24 @@
 // pages/game/index.js
+import Game from '../../services/game'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    game:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(options)
+    const game = new Game
+    this.setData({
+      game:game.getGameById(options.gameId)
+    })
   },
 
   /**

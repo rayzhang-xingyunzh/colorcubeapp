@@ -9,9 +9,17 @@ Page({
     players:2,
     duration:20,
     tags:[{
-      name:'aa',checked:false
-    },{
-      name: 'bb', checked: false
+      name:'学生',checked:false
+    }, {
+      name: '白领', checked: false
+      }, {
+        name: '烧脑', checked: false
+    }, {
+      name: '策略', checked: false
+      }, {
+        name: '欢乐', checked: false
+      },{
+      name: '', checked: false
     }]
   },
 

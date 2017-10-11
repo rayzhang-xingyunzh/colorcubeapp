@@ -18,9 +18,9 @@ Page({
     wx.getStorage({
       key: 'suggestOptions',
       success: (res) => {
-        console.log(res)
+        console.log("res",res)
         const gameService = new Game()
-        const result = gameService.getSuggestion(res)
+        const result = gameService.getSuggestion(res.data)
         console.log(result)
         this.setData({
           suggestion:result
@@ -33,6 +33,9 @@ Page({
 
   handleCardClick:(e) => {
     console.log(e)
+    wx.navigateTo({
+      url: '/pages/game/index?gameId=' + e.target.dataset.id,
+    })
   },
   /**
    * 用户点击右上角分享

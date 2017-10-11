@@ -1,37 +1,49 @@
 /* pages/suggest/index.wxss */
 
-.panel{
+.panel {
   display: block;
   height: auto;
-  margin-top:10rpx;
+  margin-top: 20rpx;
 }
 
-.checkbox-group{
+.min_no {
+  margin-left: 30rpx;
+}
+
+.max_no {
+  float: right;
+  margin-right: 15rpx;
+}
+
+.checkbox-group {
   height: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.checkbox{
+.checkbox {
   width: 20%;
   height: 40rpx;
   margin-left: 5%;
-  margin-right:5%; 
-}  
+  margin-right: 5%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
 
 .checkbox-tag {
   display: none;
 }
 
-.checkbox-label{
- background-color: whitesmoke;
-    padding: 9rpx;
-    display: inline-block;
-    position: relative;
+.checkbox-label {
+  background-color: whitesmoke;
+  padding: 9rpx;
+  display: inline-block;
+  position: relative;
 }
 
-.checkbox-label-checked{
+.checkbox-label-checked {
   background-color: blue;
-    padding: 9rpx;
-    display: inline-block;
-    position: relative;
-} 
+  padding: 9rpx;
+  display: inline-block;
+  position: relative;
+}
