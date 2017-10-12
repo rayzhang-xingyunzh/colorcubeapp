@@ -10,16 +10,24 @@
     "navigationBarTitleText":"快乐方桌游"
   },
   "tabBar": {
+    "backgroundColor":"white",
+    "selectedColor": "#f7500a",
     "list": [
       {
+        "selectedIconPath": "srcs/imgs/index_selected.png",
+        "iconPath":"srcs/imgs/index_deselected.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
+        "selectedIconPath": "srcs/imgs/suggest_selected.png",
+        "iconPath": "srcs/imgs/suggest_deselected.png",
         "pagePath": "pages/suggest/index",
         "text": "推荐"
       },
       {
+        "selectedIconPath": "srcs/imgs/prize_selected.png",
+        "iconPath": "srcs/imgs/prize_deselected.png",
         "pagePath": "pages/random/index",
         "text": "奖惩"
       }

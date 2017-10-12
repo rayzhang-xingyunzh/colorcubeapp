@@ -3,33 +3,83 @@
 .panel {
   display: block;
   height: auto;
-  margin-top: 20rpx;
-  padding-left: 10rpx;
-  padding-right: 10rpx;
+  /* margin-top: 20rpx; */
+  margin-bottom:50rpx;
+  padding-bottom:30rpx;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.min_no {
+.panel-title{
+  height: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.panel-title image{
+  width: 250rpx;
+  height: 100%;
+}
+
+/* .panel-title-players{
+  margin-bottom: 30rpx;
+} */
+
+.title-panel{
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-image: linear-gradient(to bottom right,#ff7307,#ff4f06);
+  /* background-image: url('https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUW51NDQLtmx8xkKuC2HtErxSS0MJZlrmzdcYZgibwMXMRGIJPFicbCNkoo2O8S5Qkgycmic4p6icHkb9g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&retryload=1'); */
+  height: 163rpx;
+  display: flex;
+  align-items: center;
+}
+
+.title-panel image{
+  margin-left: 10rpx;
+  height: 135rpx;
+  width: 135rpx;
+}
+
+.title-panel text{
+  line-height: 67rpx;
+  margin-left: 10rpx;
+  height: 135rpx;
+  color: white;
+  /* width: 135rpx; */
+}
+
+
+/* .min_no {
   margin-left: 30rpx;
 }
 
 .max_no {
   float: right;
   margin-right: 15rpx;
-}
+} */
 
 .checkbox-group {
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .checkbox {
-  width: 20%;
-  height: 40rpx;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10rpx;
-  margin-bottom: 10rpx;
+  width: 24%;
+  height: 42rpx;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  padding: 9rpx;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 6rpx;
+  box-shadow: 0rpx 3rpx 2rpx #b1b1b1;
+  font-size: 30rpx;
+  line-height: 42rpx;
 }
 
 .checkbox-tag {
@@ -37,15 +87,26 @@
 }
 
 .checkbox-label {
-  background-color: whitesmoke;
-  padding: 9rpx;
-  display: inline-block;
-  position: relative;
+  background-color: #eeeeee;
+  color: #686c6f;
 }
 
 .checkbox-label-checked {
-  background-color: blue;
-  padding: 9rpx;
-  display: inline-block;
-  position: relative;
+  background-color: #58bcf8;
+  color: white;
+}
+
+.bottom_border-panel{
+  border-bottom: solid;
+  border-width: 1rpx;
+  border-color: #cccccc;
+}
+
+.suggest-button{
+  background-image: linear-gradient(to bottom right,#ff7307,#ff4f06);
+  width: 400rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: white;
+  font-size: 50rpx;
 }

@@ -3,7 +3,7 @@
   <view class='swiper-panel'>
     <swiper class='swiper' autoplay='true'>
       <swiper-item>
-        <image mode='aspectFill' src='../../srcs/imgs/banner_index.png'></image>
+        <image mode='aspectFill' src='https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUW51NDQLtmx8xkKuC2HtErxJib3o8HricTLGZ2ANm4sE9AXoBNbL7Y2kAX7U5HyjxCUm5oBCy3X0XDw/640?wx_fmt=png&wxfrom=5&wx_lazy=1'></image>
       </swiper-item>
     </swiper>
   </view>
@@ -12,11 +12,29 @@
     <view class='hot_game-title'>
       热门游戏
     </view>
+
+    <view class='hot_game-content'>
+
+      <view class='hot_game-item' wx:for="{{hotGames}}" wx:key="" data-id='{{item.id}}' catchtap='gameClicked' >
+        <image></image>
+        <text>{{item.name}}</text>
+      </view>
+      
+    </view>
   </view>
 
   <view class='actions-panel'>
-    <view class='action-pad'>我想去</view>
-    <view class='action-pad'>我想去</view>
-    <view class='action-pad'>我想去</view>
+    <view catchtap='locationClicked' class='action-pad'>
+      <image src='../../srcs/imgs/location.png'></image>
+       <text>我想去</text> 
+    </view>
+    <view catchtap='wechatClicked' class='action-pad'>
+      <image src='../../srcs/imgs/wechat.png'></image>
+       <text>微信号</text> 
+    </view>
+    <view catchtap='phoneClicked' class='action-pad'>
+      <image src='../../srcs/imgs/phone.png'></image>
+       <text>打电话</text> 
+    </view>
   </view>
 </view>

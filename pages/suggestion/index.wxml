@@ -1,11 +1,31 @@
 <!--pages/suggestion/index.wxml-->
 
 <view class='page'>
-  <text>推荐结果</text>
+  <view class='title-panel'>
+    <image src='../../srcs/imgs/suggest_title.png'></image>
+    <text>推荐结果</text>
+  </view>
 
-  <view class='result'>
-    <view wx:for="{{suggestion}}" wx:key="" data-id="{{item.id}}" catchtap='handleCardClick'>
-      {{item.name}}
+  <view class='result-panel'>
+    <view class='game-panel' wx:for="{{suggestion}}" wx:key="" data-id="{{item.id}}" catchtap='handleCardClick'>
+      <view class='game-info-panel'>
+        <view class='game-name'>
+          <text>{{item.name}}</text>
+        </view>
+        <view class='game-sub-name'></view>
+        <view class='game-players'>
+        
+        {{item.players.min}} - {{item.players.max}} 
+        
+        </view>
+        <view class='game-duration'>
+        {{item.duration}} 
+        </view>
+        <view class='game-tags'></view>
+      </view>
+      <view class='game-image-panel'>
+        <image src='../../srcs/imgs/4.png'></image>
+      </view>
     </view>
   </view>
 </view>

@@ -4,6 +4,13 @@ class Game{
   constructor(){
     // console.log(games)
     this.DURATION_ALLOWED_DIFF = 10
+    this.hotGameIds = [0,1,2,3]
+  }
+
+  getHotGames(){
+    return games.filter((game) => {
+      return this.hotGameIds.indexOf(game.id) > -1
+    })
   }
 
   getGameById(id){

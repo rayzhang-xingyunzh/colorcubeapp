@@ -1,1 +1,55 @@
 /* pages/suggestion/index.wxss */
+.title-panel{
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-image: linear-gradient(to bottom right,#ff7307,#ff4f06);
+  height: 163rpx;
+  display: flex;
+  align-items: center;
+}
+
+.title-panel image{
+  margin-left: 10rpx;
+  height: 135rpx;
+  width: 135rpx;
+}
+
+.title-panel text{
+  line-height: 67rpx;
+  margin-left: 10rpx;
+  height: 135rpx;
+  color: white;
+  /* width: 135rpx; */
+} 
+
+.result-panel{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-panel{
+  background-color: orange;
+  width: 670rpx;
+  border-radius: 30rpx;
+  margin-top:20rpx;
+   margin-bottom: 20rpx; 
+  height: 280rpx;
+  display: flex;
+}
+
+.game-info-panel{
+  width: 400rpx;
+}
+
+.game-image-panel{
+  display: flex;
+  height: 100%;
+  /* width: 300rpx; */
+  align-items: center;
+}
+
+.game-image-panel image{
+  width: 210rpx;
+  height: 210rpx;
+}
