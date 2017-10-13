@@ -1,2 +1,21 @@
 <!--pages/random/index.wxml-->
-<text>pages/random/index.wxml</text>
+<view class='page'>
+  <view class='title-panel'>
+    <image mode='aspectFit'  src='../../srcs/images/random_title.png'></image>
+    <text>奖惩生成器</text>
+  </view>
+
+  <view class='card_group'>
+    <view class='card' wx:for="{{[0,1,2,3,4,5,6,7,8]}}" wx:key=""  data-id="{{index}}" catchtap='cardClicked' >
+      <image mode='aspectFit' src='../../srcs/images/card_back.png' hidden='{{index == flippedCardId}}'></image>
+      <image mode='aspectFit' src='../../srcs/images/card_front.png' hidden='{{index != flippedCardId}}'></image>
+      <view class='clause' hidden='{{index != flippedCardId}}'>{{clause}}</view>
+    </view>
+  </view>
+
+  <view class='chosen_card' catchtap='chosenCardClicked' hidden='{{!shouldShowResult}}'>
+    <image mode='aspectFit' src='../../srcs/images/card_front.png'></image>
+    <view class='chosen_clause'>{{clause}}</view>
+    <view class='click_to_close'>轻点卡片，再来一发</view>
+  </view>
+</view>

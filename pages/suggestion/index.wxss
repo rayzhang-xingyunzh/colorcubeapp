@@ -1,26 +1,4 @@
 /* pages/suggestion/index.wxss */
-.title-panel{
-  background-repeat: no-repeat;
-  background-size: 100% 50%;
-  background-image: linear-gradient(to bottom right,#ff7307,#ff4f06);
-  height: 163rpx;
-  display: flex;
-  align-items: center;
-}
-
-.title-panel image{
-  margin-left: 10rpx;
-  height: 135rpx;
-  width: 135rpx;
-}
-
-.title-panel text{
-  line-height: 67rpx;
-  margin-left: 10rpx;
-  height: 135rpx;
-  color: white;
-  /* width: 135rpx; */
-} 
 
 .result-panel{
   display: flex;
@@ -39,7 +17,34 @@
 }
 
 .game-info-panel{
-  width: 400rpx;
+  width: 350rpx;
+  padding-left: 50rpx;
+  color: white;
+}
+
+.game-name{
+  margin-top: 15rpx;
+  font-size: 60rpx;
+  height: 60rpx;
+}
+
+.game-sub-name{
+  font-size: 30rpx;
+  height: 35rpx;
+  margin-bottom: 10rpx;
+}
+
+.game-players,.game-duration,.game-tags{
+  height: 50rpx;
+  display: flex;
+  font-size: 22rpx;
+  align-items: center;
+}
+
+.game-players image,.game-duration image{
+  height: 35rpx;
+  width: 35rpx;
+  margin-right: 10rpx;
 }
 
 .game-image-panel{

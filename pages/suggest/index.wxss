@@ -16,39 +16,15 @@
 }
 
 .panel-title image{
-  width: 250rpx;
+  width: 230rpx;
   height: 100%;
 }
 
-/* .panel-title-players{
-  margin-bottom: 30rpx;
-} */
-
-.title-panel{
-  background-repeat: no-repeat;
-  background-size: 100% 50%;
-  background-image: linear-gradient(to bottom right,#ff7307,#ff4f06);
-  /* background-image: url('https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUW51NDQLtmx8xkKuC2HtErxSS0MJZlrmzdcYZgibwMXMRGIJPFicbCNkoo2O8S5Qkgycmic4p6icHkb9g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&retryload=1'); */
-  height: 163rpx;
-  display: flex;
-  align-items: center;
+.multi_choose{
+  margin-top: 15rpx !important; 
+  height: 25rpx !important;
+  width: 100rpx !important;
 }
-
-.title-panel image{
-  margin-left: 10rpx;
-  height: 135rpx;
-  width: 135rpx;
-}
-
-.title-panel text{
-  line-height: 67rpx;
-  margin-left: 10rpx;
-  height: 135rpx;
-  color: white;
-  /* width: 135rpx; */
-}
-
-
 /* .min_no {
   margin-left: 30rpx;
 }

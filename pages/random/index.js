@@ -5,62 +5,48 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+    flippedCardId:-1,
+    shouldShowResult:false,
+    clause:"我是惩罚",
+    prizes:["我是一个奖励，给你一个吻"],
+    publishments:["我是惩罚，讲讲你的初恋","右上角转发此小程序到你消息列表的第3个人/群！"]
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({
+      flippedCardId: -1
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
+  chosenCardClicked:function(){
+    this.setData({
+      flippedCardId: -1,
+      shouldShowResult:false
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
+  cardClicked:function(e) {
+    const no = Math.floor(Math.random() * 2)
+    if(this.data.flippedCardId == -1){
+      this.setData({
+        clause:this.data.publishments[no],
+        flippedCardId: e.currentTarget.dataset.id
+      })
+    }
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
+    setTimeout(()=>{
+      this.setData({
+        shouldShowResult:true
+      })
+    },500)
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+    
   }
 })

@@ -10,13 +10,14 @@
 
   <view class='hot_game-panel'>
     <view class='hot_game-title'>
-      热门游戏
+      <image mode='aspectFit' src='../../srcs/images/hot_game.png'/>
+      人气游戏
     </view>
 
     <view class='hot_game-content'>
 
       <view class='hot_game-item' wx:for="{{hotGames}}" wx:key="" data-id='{{item.id}}' catchtap='gameClicked' >
-        <image></image>
+        <image mode='aspectFit' src='../../srcs/images/4.png'/>
         <text>{{item.name}}</text>
       </view>
       
@@ -25,15 +26,15 @@
 
   <view class='actions-panel'>
     <view catchtap='locationClicked' class='action-pad'>
-      <image src='../../srcs/imgs/location.png'></image>
+      <image src='../../srcs/images/location.png'></image>
        <text>我想去</text> 
     </view>
     <view catchtap='wechatClicked' class='action-pad'>
-      <image src='../../srcs/imgs/wechat.png'></image>
+      <image src='../../srcs/images/wechat.png'></image>
        <text>微信号</text> 
     </view>
     <view catchtap='phoneClicked' class='action-pad'>
-      <image src='../../srcs/imgs/phone.png'></image>
+      <image src='../../srcs/images/phone.png'></image>
        <text>打电话</text> 
     </view>
   </view>

@@ -1,7 +1,7 @@
 <!--pages/suggest/index.wxml-->
 <view class='page'>
   <view class='title-panel'>
-    <image src='../../srcs/imgs/suggest_title.png'></image>
+    <image mode='aspectFit'  src='../../srcs/images/suggest_title.png'></image>
     <text>游戏推荐</text>
   </view>
 
@@ -9,7 +9,7 @@
 
     <view class='panel-title'>
       <!-- <text>游戏人数</text> -->
-      <image mode='aspectFit'  src='../../srcs/imgs/title_players.png'></image>
+      <image mode='aspectFit'  src='../../srcs/images/title_players.png'></image>
     </view>
     <slider min='1' max='16' show-value='true' bindchange='playersChange' value='3' step='1' backgroundColor='#cccccc' activeColor='#fba430'></slider>
     <!-- <text class='min_no'>1</text><text class='max_no'>20</text> -->
@@ -18,7 +18,7 @@
   <view class='panel bottom_border-panel'>
     <view class='panel-title'>
       <!-- <text>游戏时长</text> -->
-      <image mode='aspectFit'  src='../../srcs/imgs/title_duration.png'></image>
+      <image mode='aspectFit'  src='../../srcs/images/title_duration.png'></image>
     </view>
     <slider min='0' max='100' show-value='true' bindchange='durationChange' value='20' step='5' backgroundColor='#cccccc' activeColor='#ff627c'></slider>
   </view>
@@ -27,7 +27,8 @@
 
     <view class='panel-title'>
       <!-- <text>游戏类型</text> -->
-      <image mode='aspectFit' src='../../srcs/imgs/title_tags.png'></image>
+      <image mode='aspectFit' src='../../srcs/images/title_tags.png'/>
+      <image class='multi_choose' mode='aspectFit' src='../../srcs/images/multichoose.png' />
     </view>
     <view class="tag_btn_group">
       <checkbox-group class="checkbox-group" bindchange="tagChange">

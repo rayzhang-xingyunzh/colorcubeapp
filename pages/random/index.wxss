@@ -1,1 +1,66 @@
 /* pages/random/index.wxss */
+/* @import "/srcs/stylesheets/animate.wxss"; */
+
+.card_group {
+  width: 700rpx;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  width: 27%;
+  height: 280rpx;
+  position: relative;
+}
+
+.card image {
+  width: 100%;
+  height: 100%;
+}
+
+.clause {
+  position: absolute;
+  top: 150rpx;
+  left: 30rpx;
+  width: 129rpx;
+  font-size: 15rpx;
+  text-indent: 20rpx;
+}
+
+.chosen_card {
+  position: absolute;
+  width: 600rpx;
+  height: 800rpx;
+  top: 200rpx;
+  left: 75rpx;
+}
+
+.chosen_clause{
+  position: absolute;
+  text-indent: 80rpx;  
+  top: 350rpx;
+  left: 100rpx;
+  width: 400rpx;
+  font-size: 40rpx;
+  color: #4D2C24;
+}
+
+.chosen_card image {
+  width: 100%;
+  height: 100%;
+}
+
+.click_to_close{
+  font-size: 18rpx;
+  position: absolute;
+  bottom:125rpx;
+  right:110rpx;
+  color: #4D2C24;
+}

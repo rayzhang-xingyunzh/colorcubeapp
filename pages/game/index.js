@@ -17,7 +17,7 @@ Page({
     console.log(options)
     const game = new Game
     this.setData({
-      game:game.getGameById(options.gameId)
+      game:game.getGameById(options.id)
     })
   },
 

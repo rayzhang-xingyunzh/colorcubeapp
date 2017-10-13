@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    suggestion:[]
+    suggestion:[],
+    bgColor: ["#fdbe6e","#fe91a4","#89d0fa"]
   },
 
   /**
@@ -27,8 +28,6 @@ Page({
         })
       },
     })
-
-    
   },
 
   handleCardClick:(e) => {

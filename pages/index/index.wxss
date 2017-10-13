@@ -6,7 +6,7 @@
   height: 350rpx;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url("https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUW51NDQLtmx8xkKuC2HtErxZyCg7b2wIE18puHEkbehRC7PVp5xW65Y1fUibrC7olvUWEXtOSwfJzw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&retryload=1")
+  background-image: url("https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUUEU7cicN22j0HkXY6y5yF6LavUjcsOYtkFs4VS3gFjUpKwjTLiaRlia52Qj3LqSWGCEKxjStuyN63NA/640?wx_fmt=png&wxfrom=5&wx_lazy=1")
 }
 
 .swiper{
@@ -28,12 +28,19 @@
 }
 
 .hot_game-title{
+  display: flex;
+  align-items: center;
   color: white;
   height: 74rpx;
   line-height: 74rpx;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url('https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUW51NDQLtmx8xkKuC2HtErxSS0MJZlrmzdcYZgibwMXMRGIJPFicbCNkoo2O8S5Qkgycmic4p6icHkb9g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&retryload=1')
+}
+
+.hot_game-title image{
+  height: 50rpx;
+  width: 80rpx;
 }
 
 .hot_game-content{

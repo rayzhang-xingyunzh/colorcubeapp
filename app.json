@@ -1,4 +1,5 @@
 {
+  "disableScroll": true,
   "pages": [
     "pages/index/index",
     "pages/suggest/index",
@@ -10,24 +11,24 @@
     "navigationBarTitleText":"快乐方桌游"
   },
   "tabBar": {
-    "backgroundColor":"white",
+    "backgroundColor":"#ffffff",
     "selectedColor": "#f7500a",
     "list": [
       {
-        "selectedIconPath": "srcs/imgs/index_selected.png",
-        "iconPath":"srcs/imgs/index_deselected.png",
+        "selectedIconPath": "srcs/images/index_selected.png",
+        "iconPath":"srcs/images/index_deselected.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "selectedIconPath": "srcs/imgs/suggest_selected.png",
-        "iconPath": "srcs/imgs/suggest_deselected.png",
+        "selectedIconPath": "srcs/images/suggest_selected.png",
+        "iconPath": "srcs/images/suggest_deselected.png",
         "pagePath": "pages/suggest/index",
         "text": "推荐"
       },
       {
-        "selectedIconPath": "srcs/imgs/prize_selected.png",
-        "iconPath": "srcs/imgs/prize_deselected.png",
+        "selectedIconPath": "srcs/images/random_selected.png",
+        "iconPath": "srcs/images/random_deselected.png",
         "pagePath": "pages/random/index",
         "text": "奖惩"
       }

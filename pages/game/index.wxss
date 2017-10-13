@@ -1,1 +1,81 @@
 /* pages/game/index.wxss */
+
+.game-page{
+  background-color: #fff1e8;
+  height: 100%;
+}
+
+.game-content{
+  width: 700rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-basic{
+  display: flex;
+}
+
+.game-image{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.game-image image{
+  width: 100%;
+  height: 100%;
+}
+
+.game-info{
+  width: 350rpx;
+  padding-left: 20rpx;
+}
+
+.game-name{
+  /* margin-top: 15rpx; */
+  font-size: 70rpx;
+  color: #ff7508;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-weight: bold;
+}
+
+.game-sub-name{
+  color: #ff7508;
+  font-size: 27rpx;
+  height: 35rpx;
+  margin-bottom: 10rpx;
+}
+
+.game-players,.game-duration,.game-tags{
+  height: 52rpx;
+  display: flex;
+  font-size: 24rpx;
+  align-items: center;
+}
+
+.game-players image,.game-duration image{
+  height: 35rpx;
+  width: 35rpx;
+  margin-right: 10rpx;
+}
+
+.game-detail{
+  margin-top: 30rpx;
+}
+
+.detail-title{
+  height: 80rpx;
+  width: 200rpx;
+}
+
+.detail-title image{
+  height: 100%;
+  width: 100%;
+}
+
+.detail-content{
+  font-size: 35rpx;
+  margin-left: auto;
+  margin-right:auto;
+  width: 96%;
+}

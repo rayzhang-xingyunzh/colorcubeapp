@@ -41,8 +41,8 @@ Page({
       title: '拨打此号码？',
       content: '18502794699',
       confirmText:"拨打",
-      success:function(confirm,cancel){
-        if(confirm){
+      success:(res) => {
+        if(res.confirm){
           wx.makePhoneCall({
             phoneNumber: '18502794699'
           })

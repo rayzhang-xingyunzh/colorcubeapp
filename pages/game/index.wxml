@@ -1,7 +1,47 @@
 <!--pages/game/index.wxml-->
-<text>pages/game/index.wxml</text>
-<view class='page'>
-  <view>
-    <text>{{game.name}}</text>
+
+<view class='page game-page'>
+  <view class='title-panel'>
+    <image mode='aspectFit' src='../../srcs/images/game_title.png'></image>
+    <text>游戏介绍</text>
+  </view>
+
+  <view class='game-content'>
+    <view class='game-basic'>
+      <view class='game-image'>
+        <image mode='aspectFit' src='../../srcs/images/4.png'/>
+      </view>
+
+      <view class='game-info'>
+        <view class='game-name'>
+          <text>{{game.name}}</text>
+        </view>
+        <view class='game-sub-name'>{{game.name}}</view>
+        <view class='game-players'>
+          <image src='../../srcs/images/players_black.png'></image>
+          <text>游戏人数：{{game.players.min}} - {{game.players.max}} 人
+          </text>
+        </view>
+        <view class='game-duration'>
+          <image src='../../srcs/images/duration_black.png'></image>
+          <text>游戏时间：{{game.duration}} 分钟
+          </text>
+
+        </view>
+        <view class='game-tags'>
+          游戏类型
+        </view>
+      </view>
+    </view>
+
+    <view class='game-detail'>
+      <view class='detail-title'>
+        <image mode='aspectFit' src='../../srcs/images/title_game_guide.png'></image>
+      </view>
+      <view class='detail-content'>
+        <text>SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的。
+        </text>
+      </view>
+    </view>
   </view>
 </view>

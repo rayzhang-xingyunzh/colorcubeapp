@@ -2,29 +2,34 @@
 
 <view class='page'>
   <view class='title-panel'>
-    <image src='../../srcs/imgs/suggest_title.png'></image>
+    <image mode='aspectFit'  src='../../srcs/images/suggest_title.png'></image>
     <text>推荐结果</text>
   </view>
 
   <view class='result-panel'>
-    <view class='game-panel' wx:for="{{suggestion}}" wx:key="" data-id="{{item.id}}" catchtap='handleCardClick'>
+    <view class='game-panel' wx:for="{{suggestion}}" wx:key="" data-id="{{item.id}}" catchtap='handleCardClick' style='background-color:{{bgColor[index]}}'>
       <view class='game-info-panel'>
         <view class='game-name'>
           <text>{{item.name}}</text>
         </view>
-        <view class='game-sub-name'></view>
+        <view class='game-sub-name'>set</view>
         <view class='game-players'>
-        
-        {{item.players.min}} - {{item.players.max}} 
-        
+          <image src='../../srcs/images/players_white.png'></image>
+          <text>游戏人数：{{item.players.min}} - {{item.players.max}} 人
+          </text>
         </view>
         <view class='game-duration'>
-        {{item.duration}} 
+          <image src='../../srcs/images/duration_white.png'></image>
+          <text>游戏时间：{{item.duration}} 分钟
+          </text>
+
         </view>
-        <view class='game-tags'></view>
+        <view class='game-tags'>
+          游戏类型
+        </view>
       </view>
       <view class='game-image-panel'>
-        <image src='../../srcs/imgs/4.png'></image>
+        <image src='../../srcs/images/4.png'></image>
       </view>
     </view>
   </view>
