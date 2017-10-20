@@ -2,8 +2,15 @@
 <view class='page'>
   <view class='swiper-panel'>
     <swiper class='swiper' autoplay='true'>
+      <!-- <swiper-item wx:for="{{banners}}" wx:key="">
+        <image mode='aspectFill' src='{{item}}'></image>
+      </swiper-item> -->
       <swiper-item>
         <image mode='aspectFill' src='https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUW51NDQLtmx8xkKuC2HtErxJib3o8HricTLGZ2ANm4sE9AXoBNbL7Y2kAX7U5HyjxCUm5oBCy3X0XDw/640?wx_fmt=png&wxfrom=5&wx_lazy=1'></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode='aspectFill' src='https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUW51NDQLtmx8xkKuC2HtErxSS0MJZlrmzdcYZgibwMXMRGIJPFicbCNkoo2O8S5Qkgycmic4p6icHkb9g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&retryload=1'>
+        </image>
       </swiper-item>
     </swiper>
   </view>

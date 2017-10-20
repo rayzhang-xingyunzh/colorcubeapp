@@ -11,7 +11,7 @@
       <!-- <text>游戏人数</text> -->
       <image mode='aspectFit'  src='../../srcs/images/title_players.png'></image>
     </view>
-    <slider min='1' max='16' show-value='true' bindchange='playersChange' value='3' step='1' backgroundColor='#cccccc' activeColor='#fba430'></slider>
+    <slider min='1' max='15' show-value='true' bindchange='playersChange' value='3' step='1' backgroundColor='#cccccc' activeColor='#fba430'></slider>
     <!-- <text class='min_no'>1</text><text class='max_no'>20</text> -->
   </view>
 
@@ -20,7 +20,7 @@
       <!-- <text>游戏时长</text> -->
       <image mode='aspectFit'  src='../../srcs/images/title_duration.png'></image>
     </view>
-    <slider min='0' max='100' show-value='true' bindchange='durationChange' value='20' step='5' backgroundColor='#cccccc' activeColor='#ff627c'></slider>
+    <slider min='0' max='60' show-value='true' bindchange='durationChange' value='20' step='10' backgroundColor='#cccccc' activeColor='#ff627c'></slider>
   </view>
 
   <view class='panel'>

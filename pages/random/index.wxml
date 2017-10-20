@@ -2,7 +2,7 @@
 <view class='page'>
   <view class='title-panel'>
     <image mode='aspectFit'  src='../../srcs/images/random_title.png'></image>
-    <text>奖惩生成器</text>
+    <text>大冒险</text>
   </view>
 
   <view class='card_group'>

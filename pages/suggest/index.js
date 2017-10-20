@@ -6,20 +6,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    players:2,
-    duration:20,
-    tags:[{
-      name:'学生',checked:false
+    players: 2,
+    duration: 20,
+    tags: [{
+      name: '推理', checked: false
     }, {
-      name: '白领', checked: false
-      }, {
-        name: '烧脑', checked: false
+      name: '扮演', checked: false
     }, {
-      name: '策略', checked: false
-      }, {
-        name: '欢乐', checked: false
-      },{
-      name: '', checked: false
+      name: '搞笑', checked: false
+    }, {
+      name: '赌运', checked: false
+    }, {
+      name: '合作', checked: false
+    }, {
+      name: '经营策略', checked: false
     }]
   },
 
@@ -34,59 +34,59 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   },
 
   //玩家人数改变
-  playersChange(e){
+  playersChange(e) {
     console.log("players changed to " + e.detail.value)
     this.setData({
-      players:e.detail.value
+      players: e.detail.value
     })
   },
 
   //游戏时长改变
-  durationChange(e){
+  durationChange(e) {
     console.log("duration changed to " + e.detail.value)
     this.setData({
       duration: e.detail.value
     })
   },
 
-  tagChange(e){
+  tagChange(e) {
     console.log(e.detail.value)
     var tags = this.data.tags
-    for(var i=0;i<tags.length;i++){
+    for (var i = 0; i < tags.length; i++) {
       tags[i].checked = e.detail.value.indexOf(tags[i].name) > -1;
-    } 
+    }
 
     this.setData({
-      tags:tags
+      tags: tags
     })
   },
 
-  suggest(){
+  suggest() {
     const checkedTags = this.data.tags.filter((tag) => {
       return tag.checked
     }).map((tag) => {
@@ -99,11 +99,11 @@ Page({
     wx.setStorage({
       key: 'suggestOptions',
       data: {
-        players:this.data.players,
-        duration:this.data.duration,
-        tags:checkedTags
+        players: this.data.players,
+        duration: this.data.duration,
+        tags: checkedTags
       },
-      success(){
+      success() {
         wx.navigateTo({
           url: '/pages/suggestion/index',
         })

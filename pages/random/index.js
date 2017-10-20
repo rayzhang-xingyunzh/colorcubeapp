@@ -8,7 +8,6 @@ Page({
     flippedCardId:-1,
     shouldShowResult:false,
     clause:"我是惩罚",
-    prizes:["我是一个奖励，给你一个吻"],
     publishments:["我是惩罚，讲讲你的初恋","右上角转发此小程序到你消息列表的第3个人/群！"]
   },
 

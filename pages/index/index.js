@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    hotGames:[]
+    hotGames:[],
+    banners:[]
   },
 
   /**
@@ -23,7 +24,7 @@ Page({
   gameClicked:function(e){
     console.log(e.target)
     wx.navigateTo({
-      url: '/pages/game/index?id=' + e.target.dataset.id,
+      url: '/pages/game/index?id=' + e.currentTarget.dataset.id,
     })
   },
 

@@ -29,7 +29,7 @@
 
         </view>
         <view class='game-tags'>
-          游戏类型
+          <text>游戏类型：{{game.tags}}</text>
         </view>
       </view>
     </view>
@@ -39,7 +39,7 @@
         <image mode='aspectFit' src='../../srcs/images/title_game_guide.png'></image>
       </view>
       <view class='detail-content'>
-        <text>SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的，SET很好玩的。
+        <text>{{game.description}}
         </text>
       </view>
     </view>
