@@ -33,7 +33,7 @@ Page({
   handleCardClick:(e) => {
     console.log(e)
     wx.navigateTo({
-      url: '/pages/game/index?gameId=' + e.target.dataset.id,
+      url: '/pages/game/index?id=' + e.currentTarget.dataset.id,
     })
   },
   /**

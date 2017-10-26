@@ -41,7 +41,7 @@
   align-items: center;
 }
 
-.game-players image,.game-duration image{
+.game-players image,.game-duration image,.game-tags image{
   height: 35rpx;
   width: 35rpx;
   margin-right: 10rpx;

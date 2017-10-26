@@ -46,14 +46,30 @@
   margin-bottom: 10rpx;
 }
 
-.game-players,.game-duration,.game-tags{
+.game-players,.game-duration{
   height: 52rpx;
   display: flex;
   font-size: 24rpx;
   align-items: center;
 }
 
-.game-players image,.game-duration image{
+.game-tags{
+  margin-top: 5rpx;
+  height: 80rpx;
+  display: flex;
+  font-size: 24rpx;
+  align-items: flex-start;
+}
+
+.game-players label,.game-duration label,.game-tags label{
+  width: 120rpx;
+}
+
+.game-players text,.game-duration text,.game-tags text{
+  width: 185rpx;
+}
+
+.game-players image,.game-duration image,.game-tags image{
   height: 35rpx;
   width: 35rpx;
   margin-right: 10rpx;

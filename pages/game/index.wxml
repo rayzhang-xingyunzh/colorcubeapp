@@ -19,17 +19,21 @@
         <view class='game-sub-name'>{{game.name}}</view>
         <view class='game-players'>
           <image src='../../srcs/images/players_black.png'></image>
-          <text>游戏人数：{{game.players.min}} - {{game.players.max}} 人
+          <label>游戏人数：</label>
+          <text>{{game.players.min}} - {{game.players.max}} 人
           </text>
         </view>
         <view class='game-duration'>
           <image src='../../srcs/images/duration_black.png'></image>
-          <text>游戏时间：{{game.duration}} 分钟
+          <label>游戏人数：</label>
+          <text>{{game.duration}} 分钟
           </text>
 
         </view>
         <view class='game-tags'>
-          <text>游戏类型：{{game.tags}}</text>
+          <image src='../../srcs/images/tags_black.png'></image>
+          <label>游戏类型：</label>
+          <text>{{game.tags}}</text>
         </view>
       </view>
     </view>

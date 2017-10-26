@@ -25,7 +25,8 @@
 
         </view>
         <view class='game-tags'>
-          游戏类型
+          <image src='../../srcs/images/tags_white.png'></image>
+          <text>游戏类型：{{item.tags}}</text>
         </view>
       </view>
       <view class='game-image-panel'>
