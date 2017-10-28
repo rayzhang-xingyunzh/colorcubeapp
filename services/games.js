@@ -202,7 +202,8 @@ export default [{
   },
   "duration": 15,
   "tags": ["推理", "手牌管理"],
-  "description": "旋转跳跃我闭着眼！舞蹈的犯人正处于你们之中！"
+  "description": "旋转跳跃我闭着眼！舞蹈的犯人正处于你们之中！",
+  "image":"https://mmbiz.qpic.cn/mmbiz_jpg/L9XEEMNjUUUuSJc74bKuiaq31VV4tKmrhWt3otWibfnCxoteRVoadOicsnPxLFIr7A3juicBdAZGWZXVpVMtQtiaFvA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1"
 }, {
   "id": 17,
   "name": "神马东西",

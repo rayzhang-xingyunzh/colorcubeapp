@@ -9,7 +9,7 @@
   <view class='game-content'>
     <view class='game-basic'>
       <view class='game-image'>
-        <image mode='aspectFill' src='{{game.image}}'/>
+        <image mode='aspectFill' data-url='{{game.image}}' catchtap='viewImage' src='{{game.image}}'/>
       </view>
 
       <view class='game-info'>

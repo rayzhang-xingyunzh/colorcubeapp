@@ -4,7 +4,7 @@ class Game{
   constructor(){
     // console.log(games)
     this.DURATION_ALLOWED_DIFF = 10
-    this.hotGameIds = [0,1,2,3]
+    this.hotGameIds = [32,4,10,3]
   }
 
   getHotGames(){
