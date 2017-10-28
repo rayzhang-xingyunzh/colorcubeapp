@@ -9,7 +9,7 @@
   <view class='game-content'>
     <view class='game-basic'>
       <view class='game-image'>
-        <image mode='aspectFit' src='../../srcs/images/4.png'/>
+        <image mode='aspectFill' src='{{game.image}}'/>
       </view>
 
       <view class='game-info'>

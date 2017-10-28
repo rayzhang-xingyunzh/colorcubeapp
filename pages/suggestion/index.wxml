@@ -30,7 +30,7 @@
         </view>
       </view>
       <view class='game-image-panel'>
-        <image src='../../srcs/images/4.png'></image>
+        <image mode='aspectFill' src='{{item.image}}'></image>
       </view>
     </view>
   </view>

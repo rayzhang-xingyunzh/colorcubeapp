@@ -24,7 +24,7 @@
     <view class='hot_game-content'>
 
       <view class='hot_game-item' wx:for="{{hotGames}}" wx:key="" data-id='{{item.id}}' catchtap='gameClicked' >
-        <image mode='aspectFit' src='../../srcs/images/4.png'/>
+        <image mode='aspectFill' src='{{item.image}}'/>
         <text>{{item.name}}</text>
       </view>
       
