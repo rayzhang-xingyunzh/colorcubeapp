@@ -7,6 +7,10 @@
   </view>
 
   <view class='result-panel'>
+    <view class='no_suggestion' hidden='{{suggestion.length != 0}}'>
+      <view>抱歉，没有找到符合条件的游戏。</view>
+      <view>请返回更换条件，或者联系店员！</view>
+    </view>
     <view class='game-panel' wx:for="{{suggestion}}" wx:key="" data-id="{{item.id}}" catchtap='handleCardClick' style='background-color:{{bgColor[index]}}'>
       <view class='game-info-panel'>
         <view class='game-name'>

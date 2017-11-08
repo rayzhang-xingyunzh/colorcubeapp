@@ -34,7 +34,7 @@
   /* margin-top: 15rpx; */
   font-size: 70rpx;
   color: #ff7508;
-  height: 70rpx;
+  /* height: 70rpx; */
   line-height: 70rpx;
   font-weight: bold;
 }

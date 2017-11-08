@@ -4,9 +4,6 @@
   overflow: hidden;
   width: 100%;
   height: 350rpx;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("https://mmbiz.qpic.cn/mmbiz_png/L9XEEMNjUUUEU7cicN22j0HkXY6y5yF6LavUjcsOYtkFs4VS3gFjUpKwjTLiaRlia52Qj3LqSWGCEKxjStuyN63NA/640?wx_fmt=png&wxfrom=5&wx_lazy=1")
 }
 
 .swiper{
