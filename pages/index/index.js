@@ -52,12 +52,12 @@ Page({
   phoneClicked:function(){
     wx.showModal({
       title: '拨打此号码？',
-      content: '18502794699',
+      content: '027-68785503',
       confirmText:"拨打",
       success:(res) => {
         if(res.confirm){
           wx.makePhoneCall({
-            phoneNumber: '18502794699'
+            phoneNumber: '02768785503'
           })
         }
       }
